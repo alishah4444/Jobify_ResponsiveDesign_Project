@@ -1,154 +1,368 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
-*{
+
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
 }
-body{
+
+body {
     background: #040C18;
+    margin: 0;
+    font-family: poppins, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    /* color:#666666;
+    background-color: #eaeff4; */
 }
-a{
+
+a {
     color: unset;
     text-decoration: none;
 }
-.gpt3_navbar{
+
+.gpt3_navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem 6rem;
 }
-.gpt3_navbar-links{
-    flex:1;
+
+.gpt3_navbar-links {
+    flex: 1;
     display: flex;
     justify-content: flex-start;
-    align-items:center ;
+    align-items: center;
 }
-.gpt3_navbar-links_logo{
+
+.gpt3_navbar-links_logo {
     margin-right: 2rem;
 }
-.gpt3_navbar-links_logo img{
+
+.gpt3_navbar-links_logo img {
     width: 100px;
     /* height: 1px; */
 }
 
-.gpt3_navbar-links_container{
+.gpt3_navbar-links_container {
     display: flex;
     flex-direction: row;
-    
+
 }
-.gpt3_navbar-sign{
+
+.gpt3_navbar-sign {
     display: flex;
     justify-content: flex-end;
-    align-items:center ;
+    align-items: center;
 }
-.material-icons{
+
+.material-icons {
     cursor: pointer;
 }
 
-.gpt3_navbar-links_container p,.gpt3_navbar-sign p,.gpt3_navbar-menu_container p{
+.gpt3_navbar-links_container p,
+.gpt3_navbar-sign p,
+.gpt3_navbar-menu_container p {
     color: #fff;
-    font-family:  'Manrope', sans-serif;
+    font-family: 'Manrope', sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 25px;
     text-transform: capitalize;
-    margin:0 1rem;
+    margin: 0 1rem;
     cursor: pointer;
 }
-.gpt3_navbar-sign button,.gpt3_navbar-menu_container button{
-padding:0.5rem 2rem;
 
-font-family:  'Manrope', sans-serif;
-color: #fff;
+.gpt3_navbar-sign button,
+.gpt3_navbar-menu_container button {
+    padding: 0.5rem 2rem;
 
-font-weight: 500;
-font-size: 16px;
-line-height: 25px;
-border:0;
-outline: none;
-cursor: pointer;
-background: #FF4820;
-border-radius: 5px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    background: #FF4820;
+    border-radius: 5px;
 }
-.gpt3_navbar-menu{
+
+.gpt3_navbar-menu {
     margin-left: 1rem;
     display: none;
-    flex:1;
+    flex: 1;
     position: relative;
 }
-.gpt3_navbar-menu svg{
+
+.gpt3_navbar-menu svg {
     cursor: pointer;
 }
-.gpt3_navbar-menu_container{
+
+.gpt3_navbar-menu_container {
     display: flex;
-    justify-content:flex-end ;
-    align-items:flex-end  ;
+    justify-content: flex-end;
+    align-items: flex-end;
     text-align: end;
-    background:#031B34;
+    background: #031B34;
     flex-direction: column;
     position: absolute;
-    right:0;
+    right: 0;
     padding: 2rem;
-    top:40px;
+    top: 40px;
     min-width: 210px;
     margin-top: 1rem;
     border-radius: 5px;
-    box-shadow: 0 0 5 rgba(0, 0, 0, .2); 
+    box-shadow: 0 0 5 rgba(0, 0, 0, .2);
 
 }
 
-.gpt3_navbar-menu_container p{
+.gpt3_navbar-menu_container p {
     margin: 1rem 0;
 }
 
-.gpt3_navbar-menu_container-links-sign{
+.gpt3_navbar-menu_container-links-sign {
     display: none;
 }
 
 
 /* desktop */
-@media screen and (max-width: 1050px){
-    .gpt3_navbar-links_container{
-        display: none;  
+@media screen and (max-width: 1050px) {
+    .gpt3_navbar-links_container {
+        display: none;
     }
-    .gpt3_navbar-menu{
+
+    .gpt3_navbar-menu {
         display: flex;
-      justify-content: flex-end;
+        justify-content: flex-end;
     }
-    .gpt3_navbar-menu_container{
+
+    .gpt3_navbar-menu_container {
         display: none;
     }
 }
 
 /* tablet */
-@media screen and (max-width: 700px){
-    .gpt3_navbar{
-      padding: 2rem 4rem;
+@media screen and (max-width: 700px) {
+    .gpt3_navbar {
+        padding: 2rem 4rem;
     }
-    .gpt3_navbar-menu_container-links-sign{
+
+    .gpt3_navbar-menu_container-links-sign {
         display: none;
-      }
-      .gpt3_navbar-menu_container{
+    }
+
+    .gpt3_navbar-menu_container {
         display: none;
     }
 }
+
 /* mobile */
-@media screen and (max-width: 550px){
-    .gpt3_navbar{
-        padding: 2rem ;
-      }
-      .gpt3_navbar-sign{
-        display: none;
-      }
-      .gpt3_navbar-menu_container{
-        top:20px;
-      }
-      .gpt3_navbar-menu_container-links-sign{
-        display: block;
-      }
-      .gpt3_navbar-menu_container{
+@media screen and (max-width: 550px) {
+    .gpt3_navbar {
+        padding: 2rem;
+    }
+
+    .gpt3_navbar-sign {
         display: none;
     }
-      
+
+    .gpt3_navbar-menu_container {
+        top: 20px;
+    }
+
+    .gpt3_navbar-menu_container-links-sign {
+        display: block;
+    }
+
+    .gpt3_navbar-menu_container {
+        display: none;
+    }
+
+}
+
+/* Login Section */
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1140px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: flex;
+    background: #ffffff;
+    box-shadow: 0 0 5px #999999;
+}
+
+.login .col-left,
+.login .col-right {
+    padding: 30px;
+    display: flex;
+}
+
+.login .col-left {
+    width: 60%;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    background: #040C18;
+    ;
+}
+
+.login .col-right {
+    padding: 60px 30px;
+    width: 50%;
+    margin-left: -10%;
+}
+
+@media(max-width: 770px) {
+    .login .container {
+        flex-direction: column;
+        box-shadow: none;
+    }
+
+    .login .col-left,
+    .login .col-right {
+        width: 100%;
+        margin: 0;
+        clip-path: none;
+        padding: unset;
+    }
+
+    .login .col-right {
+        padding: 30px;
+    }
+
+}
+
+.login .login-text {
+    position: relative;
+    width: 100%;
+    color: #ffffff;
+}
+
+.login .login-text h2 {
+    margin: 0 0 15px 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.login .login-text p {
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.login .login-text .btn {
+    display: inline-block;
+    font-family: poppins;
+    padding: 7px 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 30px;
+    /* color: #ffffff; */
+    outline: none;
+    /* border: 1px solid #ffffff;
+    box-shadow: inset 0 0 0 0 #ffffff; */
+    transition: .3s;
+}
+
+.login .login-text .btn:hover {
+    color: #040C18;
+    ;
+    box-shadow: inset 150px 0 0 0 #ffffff;
+}
+
+.login .login-form {
+    position: relative;
+    width: 100%;
+}
+
+.login .login-form h2 {
+    margin: 0 0 15px 0;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.login .login-form p {
+    margin: 0 0 10px 0;
+    text-align: left;
+    color: #666666;
+    font-size: 15px;
+}
+
+.login .login-form p:last-child {
+    margin: 0;
+    padding-top: 3px;
+}
+
+.login .login-form p a {
+    color: #040C18;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.login .login-form label {
+    display: block;
+    width: 100%;
+    margin-bottom: 2px;
+    letter-spacing: .5px;
+}
+
+.login .login-form label span {
+    color: #ff574e;
+    padding-left: 2px;
+}
+
+.login .login-form p:last-child label {
+    width: 60%;
+    float: left;
+}
+
+.login .login-form input {
+    display: block;
+    width: 100%;
+    height: 35px;
+    padding: 0 10px;
+    outline: none;
+
+    border-radius: 30px;
+}
+
+.login .login-form input:focus {
+    border-color: #ff574e;
+}
+
+.login .login-form button:hover,
+.login .login-form input[type=submit]:hover {
+    color: #ffffff;
+    box-shadow: inset 250px 0 0 0 #040C18;
+    ;
+}
+
+.login .login-form button,
+.login .login-form input[type=submit] {
+    display: inline-block;
+    width: 100%;
+    margin-top: 5px;
+    color: #2aa15f;
+    font-size: 16px;
+    border: 1px solid #040C18;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 0 #040C18;
+    transition: .4s;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: transparent;
+
 }
