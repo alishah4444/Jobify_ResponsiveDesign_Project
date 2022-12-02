@@ -30,3 +30,11 @@ function toggleMenu() {
 
 	console.log(toggleIcons);
 }
+
+function enablehide() {
+	const div = document.getElementById('hidden1');
+	const div2 = document.getElementById('hidden2');
+	div.classList.remove('hidden');
+	div2.classList.remove('hidden');
+	document.getElementById('hidden2').scrollIntoView();
+}
