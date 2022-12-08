@@ -17,7 +17,7 @@ fetch('../container/home.html')
 	.then((data) => (document.getElementById('home').innerHTML = data));
 
 function toggleMenu() {
-	let toggleLinks = document.querySelector('.gpt3_navbar-menu_container');
+	let toggleLinks = document.querySelector('.jobify_navbar-menu_container');
 	let toggleIcons = document.querySelector('.material-icons');
 
 	toggleLinks.style.display == 'block' ? (toggleLinks.style.display = 'none') : (toggleLinks.style.display = 'block');
