@@ -667,7 +667,7 @@ align-items: flex-start;
 .jobify_job_classB{
 	display: flex;
 	flex:0.6;
-	margin-left: 5px;
+	margin-left: 10px;
 	padding: 0.5rem;
 	background: #031b34;
 	color: #ffff;
@@ -845,7 +845,7 @@ align-items: flex-start;
 	}
 	.jobify_job_classB{
 		margin-left: 0;
-		margin-top: 5px;
+		margin-top:  10px;
 	}
 }
 
@@ -915,7 +915,7 @@ align-items: flex-start;
 	}
 	.jobify_job_classB{
 		margin-left: 0;
-		margin-top: 5px;
+		margin-top:  10px;
 	}
 }
 /* mobile */
@@ -992,6 +992,6 @@ align-items: flex-start;
 	}
 	.jobify_job_classB{
 		margin-left: 0;
-		margin-top: 5px;
+		margin-top:  10px;
 	}
 }
