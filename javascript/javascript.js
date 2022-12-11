@@ -38,3 +38,7 @@ function enablehide() {
 	div2.classList.remove('hidden');
 	document.getElementById('hidden2').scrollIntoView();
 }
+
+const signUp = document.querySelector('.jobify_navbar-sign button');
+
+signUp.addEventListener('click', () => alert('Asfs'));

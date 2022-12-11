@@ -1,0 +1,540 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+  }
+  body{
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  
+    background: #040c18;
+    
+  }
+  .container{
+    display: flex;
+    max-width: 700px;
+    width: 100%;
+    align-items:center ;
+    justify-content:center ;
+    background-color: #031b34;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    color: white;
+  }
+  .content form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+  }
+  form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 85%;
+  }
+  form .input-box span.details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;    
+  }
+  .user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid ;
+    align-items: center;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+  }
+  .user-details .input-box .resume-box input{
+    background: rgb(170,191,251);
+    background: #031b34;
+  }  
+  input[type="file"]{
+    padding-top:10px;
+  }
+  .user-details .input-box input:focus,
+  .user-details .input-box input:valid{
+    border-color: maroon;
+  }
+   form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+  }
+   form .category{
+    display: flex;
+    width: 80%;
+    margin: 14px 0 ;
+  }
+   form .category label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 30px;
+  }
+   form .category label .dot{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: #d9d9d9;
+    border: 5px solid transparent;  
+  }
+   #dot-1:checked ~ .category label .one,
+   #dot-2:checked ~ .category label .two,
+   #dot-3:checked ~ .category label .three,
+   #dot-4:checked ~ .category label .four,
+   #dot-5:checked ~ .category label .five,
+   #dot-6:checked ~ .category label .six,
+   #dot-7:checked ~ .category label .seven{
+    background: #002D62;
+    border-color: #d9d9d9;
+  }
+   form .user-details .title{
+    font-size: 18px;
+    font-weight: 500;
+  }
+   form input[type="radio"]{
+    display: none;
+  }
+   form .button{
+    height: 45px;
+    margin: 35px 0
+  }
+   form .button input{
+    height: 100%;
+    width: 85%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    cursor: pointer;
+    background:#ff4820;
+    background: #ff4820;
+  }
+   form .button input:hover{
+    background: #ff4820;
+    background: #ff4820;
+    }
+    
+    
+    a {
+      color: unset;
+      text-decoration: none;
+    }
+    .jobify_navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 6rem;
+    }
+    .jobify_navbar-links {
+      flex: 1;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .jobify_navbar-links_logo {
+      margin-right: 2rem;
+    }
+    .jobify_navbar-links_logo img {
+      width: 100px;
+      /* height: 1px; */
+    }
+    
+    .jobify_navbar-links_container {
+      display: flex;
+      flex-direction: row;
+    }
+    .jobify_navbar-sign {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .material-icons {
+      cursor: pointer;
+    }
+    
+    .jobify_navbar-links_container p,
+    .jobify_navbar-sign p,
+    .jobify_navbar-menu_container p {
+      color: #fff;
+      font-family: 'Manrope', sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 25px;
+      text-transform: capitalize;
+      margin: 0 1rem;
+      cursor: pointer;
+    }
+    .jobify_navbar-sign button,
+    .jobify_navbar-menu_container button {
+      padding: 0.5rem 2rem;
+    
+      font-family: 'Manrope', sans-serif;
+      color: #fff;
+    
+      font-weight: 500;
+      font-size: 16px;
+    
+      border: 0;
+      outline: none;
+      cursor: pointer;
+      background: #ff4820;
+      border-radius: 5px;
+    }
+    .jobify_navbar-menu {
+      margin-left: 1rem;
+      display: none;
+      flex: 1;
+      position: relative;
+    }
+    .jobify_navbar-menu svg {
+      cursor: pointer;
+    }
+    .jobify_navbar-menu_container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      text-align: end;
+      background: #031b34;
+      flex-direction: column;
+      position: absolute;
+      right: 0;
+      padding: 2rem;
+      top: 40px;
+      min-width: 210px;
+      margin-top: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+    }
+    
+    .jobify_navbar-menu_container p {
+      margin: 1rem 0;
+    }
+    
+    .jobify_navbar-menu_container-links-sign {
+      display: none;
+    }
+    
+    
+    .jobify_header{
+       
+        
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      text-align:center
+    }
+    .jobify_header-content{
+        display: flex;
+        flex:1;
+        justify-content:"center";
+         align-items: flex-start;
+         flex-direction: column;
+     
+       justify-content: center;
+      align-items: center;
+      
+        
+    }
+    .jobify_header-content h1{
+        text-align:center;
+        font-weight: 800;
+        font-size: 40px;
+       
+      color: #fff; 
+    }
+    .jobify_header-content p{
+        font-style: italic;
+        font-weight: 400;
+      color: #3D6184;
+    
+    }
+    .jobify_header-content_input{
+        width: 60%;
+        margin:2rem 0 1rem;
+        display:flex;
+        flex-direction: row;
+        
+    }
+    .jobify_header-content_input input{
+        background: #052D56;
+        border-radius: 5px 0px 0px 5px;
+        
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        color: #3D6184;
+        flex:1;
+        min-height:50px;
+        width: 100%;
+        border:2px solid var(--color-foter);
+       
+        padding: 0 2rem;
+        outline: none;
+      margin:1rem;
+        color: #fff;
+    }
+    .jobify_header button{
+        
+        min-height:50px;
+        width: 30%;
+        background: #FF4820;
+    border-radius: 5px ;
+    color: #fff;
+    
+    font-weight: 700;
+    
+    line-height: 27px;
+    cursor: pointer;
+    border: 0;
+    
+    }
+    
+   @media(max-width: 760px){
+   .container{
+    max-width: 100%;
+  }
+  form .user-details .input-box{
+      margin-bottom: 15px;
+      width: 100%;
+    }
+    form .category{
+      width: 100%;
+    }
+    form .gender-details .dot,
+    form .gender-details .gender{
+      margin-top: 10px;
+    }
+    form .user-details .yon{
+      margin-bottom: 10px;
+    }
+    form .user-details .dot{
+      margin-bottom: 11px;
+    }
+    form .user-details .age{
+      margin-bottom: 11px;
+    }
+  }
+    @media(max-width: 459px){
+    .container .content .category{
+      flex-direction: column;
+    }
+  }
+  
+
+
+/* desktop */
+@media screen and (max-width: 1050px) {
+	.jobify_navbar-links_container {
+		display: none;
+	}
+	.jobify_navbar-menu {
+		display: flex;
+		justify-content: flex-end;
+	}
+	.jobify_navbar-menu_container {
+		display: none;
+	}
+
+    .jobify_header-content{
+        margin: 0 0 3rem
+    }
+	.column1{
+		flex-direction: column;
+		width: 50.3%;
+		padding: 2rem;
+		justify-content: center;
+		align-items:center ;
+	}
+	.jobify_header-content_input{
+		flex-direction: column;
+	}
+	.jobify_cta_content,.jobify_cta_container{
+        flex-direction: column;
+    }
+    .jobify_cta_container {
+       margin-top:1rem
+    }
+    .jobify_cta_container button{
+        margin-left:0;
+        margin-top: 1rem;
+      
+    }
+	.jobify_job_content_CAT{
+		flex-direction: column;
+	}
+	.CTAPANEL{
+		flex-direction: column;
+		padding: 1rem;
+		margin:1rem
+	}
+	.CTAPANEL button{
+		width: 100%;
+	}
+	.jobify_job_section{
+		flex-direction: column;
+		
+	}
+	.jobify_job_classB{
+		margin-left: 0;
+		margin-top:  10px;
+	}
+}
+
+/* tablet */
+@media screen and (max-width: 700px) {
+	.jobify_navbar {
+		padding: 2rem 4rem;
+	}
+	.jobify_navbar-menu_container-links-sign {
+		display: none;
+	}
+	.jobify_navbar-menu_container {
+		display: none;
+	}
+	.jobify_header h1{
+		font-size: 48px;
+		/* line-height: 50px; */
+	  }
+	  .jobify_header p{
+		  font-size: 16px;
+		  /* line-height: 50px; */
+		}
+	  
+	  .jobify_header-content_input input ,
+	  .jobify_header-content_input button {
+		  font-size: 16px;
+		 
+	  }
+	  .column1{
+		flex-direction: column;
+		width: 50.3%;
+		padding: 2rem;
+		justify-content: center;
+		align-items:center ;
+	}
+	.jobify_header-content_input{
+		flex-direction: column;
+		width: 80%;
+	}
+	.jobify_header button{
+		width: 40%;
+		margin: 0;
+		padding: 0;
+	}
+	.column1 img{
+		width: 60px;
+		height: 60px;
+	}
+	
+	.column1{
+		padding:0.1rem;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	
+	}
+	.CTAPANEL{
+		flex-direction: column;
+		padding: 1rem;
+		margin:1rem
+	}
+	.CTAPANEL button{
+		width: 100%;
+	}
+	.jobify_job_section{
+		flex-direction: column;
+		
+	}
+	.jobify_job_classB{
+		margin-left: 0;
+		margin-top:  10px;
+	}
+}
+/* mobile */
+@media screen and (max-width: 550px) {
+	.jobify_navbar {
+		padding: 2rem;
+	}
+	.jobify_navbar-sign {
+		display: none;
+	}
+	.jobify_navbar-menu_container {
+		top: 20px;
+	}
+	.jobify_navbar-menu_container-links-sign {
+		display: block;
+	}
+	.jobify_navbar-menu_container {
+		display: none;
+	}
+	.jobify_header h1{
+        font-size: 36px;
+        /* line-height: 50px; */
+      }
+    .jobify_header p{
+        font-size: 14px;
+        /* line-height: 50px; */
+      }
+      .jobify_header-content_input input ,
+      .jobify_header-content_input button {
+         
+          line-height :16px;
+
+      }
+	  .column1{
+		flex-direction: column;
+		width: 50.3%;
+		padding: 2rem;
+		justify-content: center;
+		align-items:center ;
+	}
+	.jobify_header-content_input{
+		flex-direction: column;
+		width: 100%;
+	}
+	.jobify_header button{
+		width: 60%;
+		margin: 0;
+		padding: 0;
+	}
+	.column1 img{
+		width: 60px;
+		height: 60px;
+	}
+
+	.column1{
+		padding:0.1rem;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		
+	}
+
+	.CTAPANEL{
+		flex-direction: column;
+		padding: 1rem;
+		margin:1rem
+	}
+	.CTAPANEL button{
+		width: 100%;
+	}
+	  
+	.jobify_job_section{
+		flex-direction: column;
+		
+	}
+	.jobify_job_classB{
+		margin-left: 0;
+		margin-top:  10px;
+	}
+}

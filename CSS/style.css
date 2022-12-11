@@ -791,6 +791,10 @@ align-items: flex-start;
 	font-weight: bold;
 	letter-spacing: 0.9;
  }
+ 
+ 
+ 
+ 
 /* desktop */
 @media screen and (max-width: 1050px) {
 	.jobify_navbar-links_container {

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+		<title>Sign Up</title>
+		<link rel="stylesheet" href="../CSS/reg.css" />
+	</head>
+	<body>
+		<main>
+			<div class="jobify_navbar">
+				<div class="jobify_navbar-links">
+					<div class="jobify_navbar-links_logo">
+						<a href="../index.html">
+							<img src="../asset/images/Jobify.png" />
+						</a>
+					</div>
+					<div class="jobify_navbar-links_container">
+						<p>
+							<a href="../index.html">Home</a>
+						</p>
+						<p>
+							<a href="#aboutUs">About us?</a>
+						</p>
+						<p>
+							<a href="#ourTeam">Our Team</a>
+						</p>
+						<p>
+							<a href="../container/job.html">Job List</a>
+						</p>
+						<p>
+							<a href="#blog">Blog</a>
+						</p>
+					</div>
+					<div class="jobify_navbar-sign">
+						<p><a href="../container/login.html">sign in</a></p>
+						<button type="button">Sign up</button>
+					</div>
+					<div class="jobify_navbar-menu">
+						<i class="material-icons" style="color: white" onclick="toggleMenu()">&#xe8ee;</i>
+
+						<div class="jobify_navbar-menu_container scale-up-center">
+							<div class="jobify_navbar-menu_container-links">
+								<p>
+									<a href="../index.html">Home</a>
+								</p>
+								<p>
+									<a href="#aboutUs">About us</a>
+								</p>
+								<p>
+									<a href="#ourTeam">Our Team</a>
+								</p>
+								<p>
+									<a href="#features">Features</a>
+								</p>
+								<p>
+									<a href="#blog">Blog</a>
+								</p>
+								<div class="jobify_navbar-menu_container-links-sign">
+									<p><a href="../container/login.html">sign in</a></p>
+									<button type="button">Sign up</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="content">
+					<h1>Create an Account</h1>
+					<form action="#">
+						<div class="user-details">
+							<div class="input-box">
+								<span class="details">First name *</span>
+								<input type="text" placeholder="Enter your first name" required />
+							</div>
+							<div class="input-box">
+								<span class="details">Last name *</span>
+								<input type="text" placeholder="Enter your last name" required />
+							</div>
+							<div class="input-box">
+								<span class="details">Email *</span>
+								<input type="text" placeholder="Enter your email" required />
+							</div>
+							<div class="input-box">
+								<span class="details">Phone Number *</span>
+								<input type="tel" placeholder="Enter your number" required />
+							</div>
+							<div class="input-box">
+								<span class="details">Password *</span>
+								<input type="password" placeholder="Enter your password" required />
+							</div>
+							<div class="input-box">
+								<span class="details">Confirm Password *</span>
+								<input type="password" placeholder="Confirm your password" required />
+							</div>
+						</div>
+						<div class="gender-details">
+							<input type="radio" name="gender" id="dot-1" />
+							<input type="radio" name="gender" id="dot-2" />
+							<input type="radio" name="gender" id="dot-3" />
+							<span class="gender-title">Gender *</span>
+							<div class="category">
+								<label for="dot-1">
+									<span class="dot one"></span>
+									<span class="gender">Male</span>
+								</label>
+								<label for="dot-2">
+									<span class="dot two"></span>
+									<span class="gender">Female</span>
+								</label>
+								<label for="dot-3">
+									<span class="dot three"></span>
+									<span class="gender">Other</span>
+								</label>
+							</div>
+						</div>
+						<div class="user-details">
+							<div class="input-box">
+								<div class="resume-box">
+									<span class="title">Provide Resume *</span>
+									<input type="file" required />
+								</div>
+							</div>
+							<div class="input-box">
+								<input type="radio" name="yon" id="dot-4" />
+								<input type="radio" name="yon" id="dot-5" />
+								<span class="title">Are you legally eligible to work in Canada? *</span>
+								<div class="category">
+									<label for="dot-4">
+										<span class="dot four"></span>
+										<span class="yon">Yes</span>
+									</label>
+									<label for="dot-5">
+										<span class="dot five"></span>
+										<span class="yon">No</span>
+									</label>
+								</div>
+							</div>
+							<div class="input-box">
+								<input type="radio" name="age" id="dot-6" />
+								<input type="radio" name="age" id="dot-7" />
+								<span class="title">Select your age category *</span>
+								<div class="category">
+									<label for="dot-6">
+										<span class="dot six"></span>
+										<span class="age">16 - 18</span>
+									</label>
+									<label for="dot-7">
+										<span class="dot seven"></span>
+										<span class="age">18 or above</span>
+									</label>
+								</div>
+							</div>
+							<div class="input-box">
+								<span class="details title">LinkedIn Profile (If you have)</span>
+								<input type="url" placeholder="Enter LinkedIn profile URL" />
+							</div>
+						</div>
+						<div class="button">
+							<input type="submit" value="Register" />
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+	</body>
+	<script src="../javascript/javascript.js" async defer></script>
+</html>
