@@ -7,9 +7,7 @@
   body{
     /* height: 100vh; */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
+
   
     background: #040c18;
     
@@ -24,6 +22,7 @@
     padding: 25px 30px;
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    margin-left: 25rem;
     color: white;
   }
   .content form .user-details{
@@ -304,6 +303,7 @@
    @media(max-width: 760px){
    .container{
     max-width: 100%;
+    margin-left: 0rem;
   }
   form .user-details .input-box{
       margin-bottom: 15px;
@@ -347,6 +347,9 @@
 		display: none;
 	}
 
+  .container{
+    margin-left: 0
+  }
     .jobify_header-content{
         margin: 0 0 3rem
     }
